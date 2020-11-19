@@ -2,7 +2,7 @@ import java.awt.EventQueue;
 
 /**
  * Clase principal del Buscaminas
- * @author  {Rellenar por el alumno}
+ * @author  Jennyfer Perianes Nieto
  *
  */
 public class Principal {
