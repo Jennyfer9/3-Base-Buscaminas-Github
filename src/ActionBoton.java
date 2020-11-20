@@ -10,11 +10,17 @@ import java.awt.event.ActionListener;
  **
  */
 public class ActionBoton implements ActionListener{
-
+	private final static int MINA = -1;
+	private VentanaPrincipal ventana;
+	private int vertical;
+	private int horizontal;
 	
 
-	public ActionBoton() {
-		//TODO
+
+	public ActionBoton(VentanaPrincipal ventana, int vertical, int horizontal) {
+		this.ventana = ventana;
+		this.vertical = vertical;
+		this.horizontal = horizontal;
 	}
 	
 	/**
@@ -22,7 +28,14 @@ public class ActionBoton implements ActionListener{
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//TODO
+		if(ventana.getJuego().tablero[vertical][horizontal] == MINA){
+			ventana.mostrarFinJuego(true);
+		}else if(ventana.getJuego().esFinJuego()){
+			ventana.mostrarFinJuego(false);
+		}else{
+			ventana.actualizarPuntuacion();
+			ventana.mostrarNumMinasAlrededor(vertical, horizontal);
+		}
 	}
 
 }
