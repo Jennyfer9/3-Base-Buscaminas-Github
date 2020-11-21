@@ -3,6 +3,7 @@ import java.awt.EventQueue;
 /**
  * Clase principal del Buscaminas
  * @author  Jennyfer Perianes Nieto
+ * @version 1.0
  *
  */
 public class Principal {
