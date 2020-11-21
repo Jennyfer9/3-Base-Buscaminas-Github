@@ -18,6 +18,8 @@ import javax.swing.SwingConstants;
  * Ventana principal del Buscaminas
  * 
  * @author Jennyfer Perianes Nieto
+ * @version 1.0
+ * @since 1.0
  */
 public class VentanaPrincipal {
 

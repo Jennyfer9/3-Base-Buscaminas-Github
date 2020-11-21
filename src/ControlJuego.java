@@ -8,6 +8,8 @@ import java.util.Random;
  * partida
  * 
  * @author Jennyfer Perianes Nieto
+ * @version 1.0
+ * @since 1.0
  *
  */
 public class ControlJuego {
